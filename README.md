@@ -21,7 +21,7 @@ Website
 * When I pushed my code to github, the website would not display. I tried changing the file order repeatedly, but eventully, I had to delete the first repository.
 * For the second repository, the website worked, but the pictures were not linking.
 * I changed files, folders, remained, and triple checked everything, but the images would not pop up.
-* Two hours later, I got 99% of the images to pop up. The header image will not display. (If you, dear grader know, please tell me!)
+* Two hours later, after making final adjustments, I was able to get the photos to pop up. Phew.
 
 ## Website Image
 

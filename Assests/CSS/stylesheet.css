@@ -1,0 +1,255 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --primary: #f7cc70;
+    --Secondary: #e8c9f1;
+    --tertiary:#f06e8e;
+    --Accent1: #6c8d5f;
+    --Accent2: wheat;
+    --Accent3: black;
+    --Accent4: white;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    /* website: https://fonts.google.com/specimen/Open+Sans+Condensed#license */
+    font-family:'Open Sans', sans-serif;
+    color: var(--Accent3);
+    background-color: var(--Secondary)
+}
+
+h1 {
+    color:var(--Accent4);
+}
+
+h2, h3, h4, h5, h6 {
+    margin: 0;
+    color: var(--Accent4)
+}
+
+p {
+    margin: 0;
+}
+
+header {
+    padding: 15px 65 15px 0; /*adds space at top*/
+    display: flex; /*puts links at top*/
+    flex-direction: row;
+    justify-content: space-between; /*pushes links to the start-end*/
+    flex-wrap: wrap;
+    align-items: center;/*centers links to the padded box at top*/
+    background-color: var(--Accent4)  /*adds the color of the box*/
+}
+
+header h1 {
+    /*puts box around name*/
+    background-color: var(--tertiary);
+    /*pulls box out from the start and moved text with it*/
+    padding: 5px 1% 5px 6%;
+    /* adding margin: 0; will fill the new box inside the header*/
+}
+
+nav {
+    /* preparing nav links to flex */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+nav a {
+    /*removed default css on links in the nav*/
+    text-decoration: none;
+    padding: 5px 10px; /*adds spacing between the links in the nav*/
+    color: var(--Accent1);
+    margin-right: 10px; /*moved the links away from the right*/
+
+    /*Makes the nav links active and adds a bar with effects */
+    background-image: linear-gradient(270deg, var(--primary) 0%, var(--primary) 100%);
+    background-repeat: no-repeat;
+    background-size: 100% 0.2em; /*adds the below bar to begin the action*/
+    background-position: bottom; /*Sets bars and action to start at bottom*/
+    transition: all 0.25s ease-in;
+    font-size: 1.2rem;
+}
+
+nav a:hover { /*changes the color of links when you hover*/
+    background-size: 100% 100%;
+    color: var(--tertiary); /*May Change nav hover color later...*/
+}
+
+
+main { /*spacing*/
+    box-sizing: border-box;
+    margin-top: 20px;
+    margin-bottom: 45px;
+}
+
+/* adding the background photo */
+.homepage-banner {
+    background-image: url("Cakes.jpg");
+    background-size: cover;
+    background-color: var(--primary);
+    padding: 150px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    text-align: flex-end;
+    
+}
+
+.homepage-banner h2 {
+    background-color: var(--tertiary);
+    padding: 10px;
+    flex-flow: column;
+    align-self: flex-end;
+}
+
+
+.main {
+    max-width: 88%; /*had to adjust so h2 are lined up with each other*/
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.section-block { /*Look into this section, what does it mean?*/
+    margin: 25px 0;
+    padding: 10px 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: space-between;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.section-block > h2 { /*Adds the bold text to the right with the stripe*/
+    flex: 0 0 20%;
+    text-align: right;
+    padding-right: 15px;
+    border-right: 4px solid var(--Accent1);
+    font-size: 3vw;
+    line-height: 1.1;
+}
+
+.section-block > div { /*This moved the ABOUT ME to the left, figure out what the 0 0 77% means*/
+    flex: 0 0 77%;
+  }
+
+.section-block p {
+    margin-bottom: 40px;
+}
+ /*Start of CC*/
+ .container1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .flex-item {
+
+    border: 5px solid var(--Accent2);
+    background-color: var(--Accent1);
+    color: var(--Accent3);
+    display: flex;
+    flex-direction: wrap;
+    align-items: flex-end;
+    margin: 20px;
+    padding: 0px 0px 20px 0px;
+    text-decoration: none;
+    min-height: 150px;
+    max-height: 150px;
+    flex: 2;
+    width: 50%;
+  }
+
+/* feature first portfolio item */
+.flex-item:first-child { /*Select and style the first flex item */
+    min-height: 400px;
+    flex-basis: 100%;
+    width: 100%;
+}
+
+.flex-item:hover {
+    background-blend-mode: soft-light;
+    opacity: 50%;
+}
+
+.flex-item div {
+  background-color: var(--Accent2); /*baclgrounf color of subtitle*/
+  padding: 8px 10px;
+}
+
+.flex-item h3{
+  font-size: 1.6rem;
+  color: var(--Accent1);
+}
+
+/*end*/
+
+
+/*images for Work Samples*/
+
+.item1 {
+    background-image: url("Flan.jpg");
+    background-repeat:no-repeat;
+    background-size: cover;
+    /* background-attachment: fixed; ((keeps the image fixed, so if you scroll you see more of the image))*/
+}
+
+/* Image below: https://api.timeforkids.com/wp-content/uploads/2019/09/final-cover-forest.jpg*/
+.item2 {
+    background-image: url("FOREST\ \(2\).jpg");
+    background-repeat:no-repeat;
+    background-size: cover;
+}
+
+.item3 {
+    background-image: url("FOREST\ \(3\).jpg");
+    background-repeat:no-repeat;
+    background-size: cover;
+}
+
+.item4 {
+    background-image: url("FOREST\ \(4\).jpg");
+    background-repeat:no-repeat;
+    background-size: cover;
+}
+
+.item5 {
+    background-image: url("FOREST\ \(5\).jpg");
+    background-repeat:no-repeat;
+    background-size: cover;
+}
+
+.contact address {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+}
+
+.contact address a {
+    text-decoration: none;
+    padding: 5px 10px; /*adds spacing between the links in the nav*/
+    color: var(--Accent4);
+    margin-right: 10px; /*moved the links away from the right*/
+
+    /*Makes the nav links active and adds a bar with effects */
+    background-image: linear-gradient(270deg, var(--primary) 0%, var(--primary) 100%);
+    background-repeat: no-repeat;
+    background-size: 100% 0.2em; /*adds the below bar to begin the action*/
+    background-position: bottom; /*Sets bars and action to start at bottom*/
+    transition: all 0.25s ease-in;
+    font-size: 1.5rem;
+    font-weight: bolder;
+}
+
+.contact address a:hover {
+    background-size: 100% 100%;
+    color: var(--Accent1);
+}

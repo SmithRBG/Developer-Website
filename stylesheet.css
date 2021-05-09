@@ -89,7 +89,7 @@ main { /*spacing*/
 
 /* adding the background photo */
 .homepage-banner {
-    background-image: url("cakes.jpg");
+    background-image: url("Cakes.jpg");
     background-size: cover;
     background-color: var(--primary);
     padding: 150px;

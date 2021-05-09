@@ -89,7 +89,7 @@ main { /*spacing*/
 
 /* adding the background photo */
 .homepage-banner {
-    background-image: url("Cakes.jpg");
+    background-image: url("images/Cakes.jpg");
     background-size: cover;
     background-color: var(--primary);
     padding: 150px;
@@ -194,7 +194,7 @@ main { /*spacing*/
 /*images for Work Samples*/
 
 .item1 {
-    background-image: url("Flan.jpg");
+    background-image: url("/images/Flan.jpg");
     background-repeat:no-repeat;
     background-size: cover;
     /* background-attachment: fixed; ((keeps the image fixed, so if you scroll you see more of the image))*/
@@ -202,25 +202,25 @@ main { /*spacing*/
 
 /* Image below: https://api.timeforkids.com/wp-content/uploads/2019/09/final-cover-forest.jpg*/
 .item2 {
-    background-image: url("FOREST\ \(2\).jpg");
+    background-image: url("/images/FOREST\ \(2\).jpg");
     background-repeat:no-repeat;
     background-size: cover;
 }
 
 .item3 {
-    background-image: url("FOREST\ \(3\).jpg");
+    background-image: url("/images/FOREST\ \(3\).jpg");
     background-repeat:no-repeat;
     background-size: cover;
 }
 
 .item4 {
-    background-image: url("FOREST\ \(4\).jpg");
+    background-image: url("/images/FOREST\ \(4\).jpg");
     background-repeat:no-repeat;
     background-size: cover;
 }
 
 .item5 {
-    background-image: url("FOREST\ \(5\).jpg");
+    background-image: url("/images/FOREST\ \(5\).jpg");
     background-repeat:no-repeat;
     background-size: cover;
 }

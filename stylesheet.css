@@ -3,11 +3,11 @@
 }
 
 :root {
-    --primary: #f7cc70;
-    --Secondary: #e8c9f1;
-    --tertiary:#f06e8e;
-    --Accent1: #6c8d5f;
-    --Accent2: wheat;
+    --primary: #e9c46a;
+    --Secondary: #264653;
+    --tertiary:#e76f51;
+    --Accent1: #2a9d8f;
+    --Accent2: #f4a261;
     --Accent3: black;
     --Accent4: white;
 }
@@ -17,7 +17,7 @@ body {
     padding: 0;
     /* website: https://fonts.google.com/specimen/Open+Sans+Condensed#license */
     font-family:'Open Sans', sans-serif;
-    color: var(--Accent3);
+    color: var(--Accent4);
     background-color: var(--Secondary)
 }
 
@@ -75,9 +75,9 @@ nav a {
     font-size: 1.2rem;
 }
 
-nav a:hover { /*changes the color of links when you hover*/
+nav a:hover { 
     background-size: 100% 100%;
-    color: var(--tertiary); /*May Change nav hover color later...*/
+    color: var(--tertiary);
 }
 
 
@@ -87,7 +87,7 @@ main { /*spacing*/
     margin-bottom: 45px;
 }
 
-/* adding the background photo */
+
 .homepage-banner {
     background-image: url("Cakes.jpg");
     background-size: cover;
